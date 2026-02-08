@@ -452,6 +452,7 @@ def issue_metrics_tab(df: pd.DataFrame):
                 color_continuous_scale=[[0, "#0046AD"], [0.5, "#63B1E5"], [1, "#FECB00"]],
                 title=f"Top Neighbourhoods by {selected_label} Count"
             )
+            fig.update_layout(barmode="group")
             fig.update_layout(
                 paper_bgcolor="#FFFFFF",
                 plot_bgcolor="#FFFFFF",
