@@ -584,6 +584,7 @@ def neighbourhood_analysis_tab(df: pd.DataFrame):
         )
         
         fig.update_layout(
+            barmode="group",
             paper_bgcolor="#FFFFFF",
             plot_bgcolor="#FFFFFF",
             font=dict(family="Open Sans, sans-serif", color="#000000", size=12),
