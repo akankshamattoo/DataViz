@@ -229,7 +229,7 @@ def render_map(df_map: pd.DataFrame, value_col: str, title: str, show_legend: bo
     r = pdk.Deck(
         layers=[layer],
         initial_view_state=view_state,
-        map_style="mapbox://styles/mapbox/dark-v11",
+        map_style="dark",
         tooltip={
             "html": tooltip_html,
             "style": {"backgroundColor": "#0046AD", "color": "white", "padding": "8px", "fontFamily": "Open Sans, sans-serif"}
